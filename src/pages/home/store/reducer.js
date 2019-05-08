@@ -1,7 +1,7 @@
 import actionType from './actionTypes';
 const defaultState = {
     homeClick: 0,
-    homeList: [0]
+    homeList: []
 };
 export default (state = defaultState, action = {}) => {
     switch (action.type) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { action } from '../store'
-import './index'
+import './index.scss'
 import { Button, InputItem,Toast } from 'antd-mobile';
 import axios from "@/api/server";
 class Home extends Component {
@@ -47,7 +47,7 @@ class Home extends Component {
                     () => this.props.addList(this.state.inputVal,this)
                 }>增加列表 </Button>
                 {
-                    this.props.list && (<ul>
+                    this.props.list && (<ul className="item_box">
                         {
                             this.props.list.map((item, index) => {
                                 return (<li key={index}>
