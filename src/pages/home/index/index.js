@@ -13,7 +13,7 @@ class Home extends Component {
     }
     inputChange(e) {
         // let value = e.target.value;
-        console.log(e)
+        // console.log(e)
        
         this.setState({
             inputVal: e
@@ -21,9 +21,9 @@ class Home extends Component {
     }
     componentDidMount(){
         axios.get("/space/list/json").then(res=>{
-            console.log(res)
+            // console.log(res)
         },err=>{
-            console.log(err)
+            // console.log(err)
         })
     }
     render() {
@@ -57,6 +57,7 @@ class Home extends Component {
                         }
                     </ul>)
                 }
+                <Button onClick={()=>this.props.history.push('/person')}>个人中心</Button>
             </div >
         )
     }

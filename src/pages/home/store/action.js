@@ -14,6 +14,6 @@ export const changeItem = (data) => {
 }
 export const asyncChangeItem = () => {
     return dispatch => {
-        console.log(dispatch)
+        // console.log(dispatch)
     }
 }
